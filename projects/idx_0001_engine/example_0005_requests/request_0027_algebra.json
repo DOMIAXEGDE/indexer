@@ -1,0 +1,8 @@
+{
+  "command": "evaluate",
+  "alphabet": ["neutral", "toggle"],
+  "operation": "divide_right",
+  "left": 4,
+  "right": 4,
+  "composition": [[[1, 0], [0, 1]], [[0, 1], [1, 0]]]
+}

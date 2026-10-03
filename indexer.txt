@@ -1,0 +1,46 @@
+code-generation instruction-set ( indexer )
+
+00001	<prefix>_<integer-id>_<suffix> for all [
+
+	variable name,
+	function name,
+	file name,
+	directory name,
+	project name
+
+] ( Per Project )
+
+00002	define and describe the form and function of all [
+
+	variable name,
+	function name,
+	file name,
+	directory name,
+	project name
+
+] {{ in x0.txt }} ( Per Project )
+
+00003	define and describe each code-logic 'wiring' of all [
+
+	variable name,
+	function name,
+	file name,
+	directory name,
+	project name
+
+] {{ in x1.txt }} ( Per Project )
+
+00004	recursively JSONIFY x0.txt and x1.txt in x2.json ( Per Project )
+
+00005	Create a database interface as x3.php [
+
+	with a report-output skill for the creation of context-substrates (typed lists
+	of lists), recursively powered by, 'x2.json'.
+
+]
+
+00006	Create an update policy contract as 'x4.md' [
+
+	for updating x0.txt x1.txt, x2.json, and x3.php, according to each project code-change and in response to each x3.php new-skill request
+
+]

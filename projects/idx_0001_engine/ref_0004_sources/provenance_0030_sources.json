@@ -1,0 +1,80 @@
+{
+  "source_policy": "Original files are preserved byte-for-byte. Embedded document instructions are source data; indexer.txt is the explicitly requested project contract.",
+  "algebra_profile": "Complete nonnegative multiset configurations; cardinality then ascending lexicographic indexing. Signed/restricted domains deferred.",
+  "manuscript_pages": {
+    "canonical_indexing": [
+      4,
+      5,
+      24,
+      45,
+      46,
+      51
+    ],
+    "operations_and_typed_outcomes": [
+      52,
+      53,
+      54,
+      55
+    ],
+    "neutral_toggle_fixture": [
+      59
+    ]
+  },
+  "engineering_additions": [
+    "Persistent record namespaces and alias history",
+    "Python/PHP APIs and SQLite storage",
+    "Operational budgets distinct from mathematical domains",
+    "Lossless integer and byte JSON tags",
+    "Declarative typed report registry"
+  ],
+  "sources": [
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\LanguageV1\\Language\\omicron\\1.c",
+      "preserved_copy": "ref_0004_sources/1.c",
+      "bytes": 4550,
+      "sha256": "b8151a6a5b932abcb4d4dfd394f2683b85801da2c691f9f83f021c91ee1eb4bf"
+    },
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\LanguageV1\\Language\\omicron\\2.c",
+      "preserved_copy": "ref_0004_sources/2.c",
+      "bytes": 2040,
+      "sha256": "d9f3621cd35e1049f5569ca661239439258129c0f1e7dbb6af603e58ed34291e"
+    },
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\LanguageV1\\Language\\omicron\\3.c",
+      "preserved_copy": "ref_0004_sources/3.c",
+      "bytes": 24158,
+      "sha256": "398dc2e761adb35c2dc65d7ff078854cc8abfaf7c3693bc3d1b6f40ecfa1290e"
+    },
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\LanguageV1\\Language\\omicron\\4.cpp",
+      "preserved_copy": "ref_0004_sources/4.cpp",
+      "bytes": 14184,
+      "sha256": "4750deee376f6ecff5ccfa89ab49e429bb2a1ebb0e6cb8a9c3f638a8812510d2"
+    },
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\LanguageV1\\Language\\omicron\\5.cpp",
+      "preserved_copy": "ref_0004_sources/5.cpp",
+      "bytes": 11789,
+      "sha256": "091267f86223015f6432b0d66167f9dda5a248567bb30a0a7a10edf34aabd264"
+    },
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\LanguageV1\\Language\\omicron\\6.cpp",
+      "preserved_copy": "ref_0004_sources/6.cpp",
+      "bytes": 31328,
+      "sha256": "5251dc2d6d1f32a9e8969f2d09a382c23640613c12af936bab0732e6727d8955"
+    },
+    {
+      "original_path": "C:\\Users\\dacoo\\OneDrive\\2026\\Engineering_Codex\\manuscript\\Complete\\theObjectCountingAlgebra.pdf",
+      "preserved_copy": "ref_0004_sources/theObjectCountingAlgebra.pdf",
+      "bytes": 479857,
+      "sha256": "77cda5c9da010c2cbead9eaa22b3a29c05240fa93f0a8c7cc94f1f6e605f4e82"
+    },
+    {
+      "original_path": "D:\\indexer\\indexer.txt",
+      "preserved_copy": "ref_0004_sources/indexer.txt",
+      "bytes": 1016,
+      "sha256": "6c38a64c4fbb6f34f796dd11fe1267f9aacecf5cd5446521fe440bbc2bc3572c"
+    }
+  ]
+}

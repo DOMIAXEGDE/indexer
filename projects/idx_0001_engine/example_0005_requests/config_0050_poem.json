@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "title": "After the Rain",
+  "formalization_origin": "model_proposed_example",
+  "original_request": "Create an example configuration of a short poem that uses all four (Object counting Algebra) operations using the \"D:\\indexer\\projects\\idx_0001_engine\" workflow.",
+  "domain": {
+    "kind": "natural",
+    "coefficient_domain": "N0^4",
+    "equality": "coordinatewise",
+    "order": "cardinality-then-ascending-lexicographic",
+    "alphabet": [
+      "Rain leaves silver on the street.",
+      "Lamplight gathers at my feet.",
+      "Clouds unfold; the stars appear.",
+      "Night grows quiet. You are here."
+    ]
+  },
+  "interpretation": {
+    "primitive": "One occurrence of an exact whole line in the ordered alphabet.",
+    "reading_order": [0, 1, 2, 3],
+    "rendering": "Visit reading_order and print each line as many times as its coordinate, with repeated copies adjacent. Omit zero-count lines.",
+    "composition_rule": "Matching line types reproduce that same type; different line types produce the empty configuration. T[i][j][k] is 1 exactly when i=j=k, and 0 otherwise. Consequently (x*y)[i]=x[i]*y[i].",
+    "multiplicative_identity": [1, 1, 1, 1],
+    "scope": "This is a declared model of line multiplicities. Rendering order is external to configuration equality. Multiplication combines occurrence counts, not the meanings of sentences; no literary quality is certified."
+  },
+  "composition": [
+    [[1, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+    [[0, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]],
+    [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 1, 0], [0, 0, 0, 0]],
+    [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 1]]
+  ],
+  "steps": [
+    {
+      "operation": "add",
+      "purpose": "Join the opening couplet to an ending draft containing an extra last line.",
+      "left": [1, 1, 0, 0],
+      "right": [0, 0, 1, 2],
+      "expected_configuration": [1, 1, 1, 2]
+    },
+    {
+      "operation": "subtract",
+      "purpose": "Remove exactly one occurrence of the last line, yielding the four-line poem.",
+      "left": [1, 1, 1, 2],
+      "right": [0, 0, 0, 1],
+      "expected_configuration": [1, 1, 1, 1]
+    },
+    {
+      "operation": "multiply",
+      "purpose": "Apply two copies of the identity as a line-count multiplier, producing two of every line.",
+      "left": [1, 1, 1, 1],
+      "right": [2, 2, 2, 2],
+      "expected_configuration": [2, 2, 2, 2]
+    },
+    {
+      "operation": "divide_right",
+      "purpose": "Find every q with q*[2,2,2,2]=[2,2,2,2]. The complete quotient set contains only the original poem.",
+      "left": [2, 2, 2, 2],
+      "right": [2, 2, 2, 2],
+      "expected_configurations": [[1, 1, 1, 1]]
+    }
+  ],
+  "requirements": [
+    "Use addition, exact subtraction, multiplication, and complete right division through the existing engine dispatcher.",
+    "The four steps form one chain: each result is the next step's left operand.",
+    "Preserve the four exact whole lines and render the final poem in the declared reading order.",
+    "The final configuration has exactly one occurrence of every line.",
+    "Verify additive and multiplicative reconstruction and canonical encode/decode round trips.",
+    "Keep configuration pointers separate from persistent record IDs and retain the full quotient set."
+  ],
+  "expected_final_configuration": [1, 1, 1, 1]
+}

@@ -1,0 +1,3 @@
+# Preserve exact bytes used by catalogue and reference-source hashes.
+/indexer.txt -text
+/projects/** -text
